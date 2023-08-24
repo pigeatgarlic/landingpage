@@ -183,13 +183,12 @@
         <div class="col-lg-4 col-md-7 col-sm-8">
           <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="services-icon">
-              <img class="shape" src="assets/images/services/services-shape.svg" alt="shape" />
-              <img class="shape-1" src="assets/images/services/services-shape-1.svg" alt="shape" />
+              <img class="shape" src="assets/images/services/gamer.jpg" alt="shape" style="border-radius: 100%" />
               <i class="lni lni-baloon"> </i>
             </div>
-            <div class="services-content mt-30">
+            <div class="services-content mt-30" onclick="localStorage.setItem('FIRST_TIME', 'false'); window.location='https://thinkmay.net/'">
               <h4 class="services-title">
-                <a id="service_title1" href="javascript:void(0)">Game on cloud</a>
+                <a id="service_title1" href="javascript:void(0)" style="color: #0d6efd;">Game on cloud</a>
               </h4>
               <p id="service_desc1" class="text">
                 Play game on cloud from 10$ per month, we install game for you
@@ -201,13 +200,12 @@
         <div class="col-lg-4 col-md-7 col-sm-8">
           <div  href="https://thinkmay.net" class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="services-icon">
-              <img class="shape" src="assets/images/services/services-shape.svg" alt="shape" />
-              <img class="shape-1" src="assets/images/services/services-shape-1.svg" alt="shape" />
+              <img class="shape" src="assets/images/services/worker.jpg" alt="shape" style="border-radius: 100%" />
               <i class="lni lni-baloon"> </i>
             </div>
-            <div class="services-content mt-30">
+            <div class="services-content mt-30" onclick="localStorage.setItem('FIRST_TIME', 'false'); window.location='https://thinkmay.net/'">
               <h4 class="services-title">
-                <a id="service_title1" href="javascript:void(0)">Work on cloud</a>
+                <a id="service_title1" href="javascript:void(0)" style="color: #0d6efd;">Work on cloud</a>
               </h4>
               <p id="service_desc1" class="text">
                 Blender on cloud from 10$ per month, we save your data
@@ -219,13 +217,12 @@
         <div class="col-lg-4 col-md-7 col-sm-8">
           <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
             <div class="services-icon">
-              <img class="shape" src="assets/images/services/services-shape.svg" alt="shape" />
-              <img class="shape-1" src="assets/images/services/services-shape-3.svg" alt="shape" />
+              <img class="shape" src="assets/images/services/enterprise.jpg" alt="shape" style="border-radius: 100%" />
               <i class="lni lni-bolt-alt"> </i>
             </div>
-            <div class="services-content mt-30">
+            <div class="services-content mt-30" onclick="localStorage.setItem('FIRST_TIME', 'false'); window.location='https://thinkmay.net/'">
               <h4 class="services-title">
-                <a id="service_title3" href="javascript:void(0)">Remote desktop</a>
+                <a id="service_title3" href="javascript:void(0)" style="color: #0d6efd;">Remote desktop</a>
               </h4>
               <p id="service_desc3" class="text">
                 Cheaper and better remote desktop for your render farm.
@@ -479,6 +476,13 @@
   <script src="assets/js/count-up.min.js"></script>
   <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/main.js"></script>
+  
+  <script>
+    var gkey = localStorage.getItem('FIRST_TIME');
+    console.log(key)
+    if (gkey == 'false')
+      window.location='https://thinkmay.net'
+</script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FND2K23PY8"></script>
