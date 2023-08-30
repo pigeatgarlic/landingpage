@@ -5,4 +5,4 @@ async function delete_cache(){
     location.reload()
   }
 }
-delete_cache()
+delete_cache().then(() => {console.log('delete cached')})
