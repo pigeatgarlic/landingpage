@@ -330,10 +330,12 @@ p {
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 16px;
+  font-weight: 600;
+  backdrop-filter: blur(24px);
   transition: all 0.4s ease-out 0s;
-  background: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
-  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
-  background-size: 200%;
+  /*background: -webkit-gradient(330deg, rgb(0, 150, 199) 0%, rgb(0, 180, 216) 26.04%, rgb(72, 202, 228) 51.56%, rgb(144, 224, 239) 77.6%, rgb(173, 232, 244) 100%);*/
+  background: linear-gradient(330deg, rgb(0, 150, 199) 0%, rgb(0, 180, 216) 26.04%, rgb(72, 202, 228) 51.56%, rgb(144, 224, 239) 77.6%, rgb(173, 232, 244) 100%);
 }
 
 .download-btn{
@@ -362,8 +364,9 @@ p {
 }
 
 .main-btn:hover {
-  color: #fff;
-  background-position: right center;
+  color: #fff !important;
+  background: linear-gradient(to right, rgb(254, 132, 100) 0%, rgb(254, 110, 154) 50%, rgb(254, 132, 100) 100%) 0% 0% / 200%;
+  transition: all 0.3s ease-out 0s;
 }
 
 @media (max-width: 767px) {
@@ -753,6 +756,8 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav {
     padding: 20px 30px;
+    flex-direction: row;
+    gap: 16px;
   }
 }
 
@@ -979,12 +984,16 @@ p {
   SERVICES css 
 ===========================*/
 .single-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
+  min-height: 440px;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 50px 30px;
+  padding: 24px 30px;
   border: 2px solid transparent;
   border-radius: 8px;
 }
@@ -2355,4 +2364,61 @@ p {
 
 .pb-225 {
   padding-bottom: 225px;
+}
+
+.pricing-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing-model{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pricing-model-info{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px   ;
+}
+
+.pricing-title{
+  line-height: 34px;
+  font-size: 40px;
+  text-align: start;
+  margin: 12px 0 45px 0;
+  font-weight: 800;
+  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.featured-on{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.featured-img{
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.looking-for{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.looking-for-info{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px   ;
 }
