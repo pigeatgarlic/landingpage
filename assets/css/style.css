@@ -1487,7 +1487,7 @@ p {
   bottom: 0;
   left: 0;
   height: 130%;
-  width: 222%;
+  width: 100%;
   background-image: url(../images/footer/footer-bg.svg);
   background-position: top center;
   z-index: -1;
@@ -2374,7 +2374,10 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
-
+.pricing{
+  position: relative;
+  z-index: 6;
+}
 .pricing-container{
   display: flex;
   flex-direction: column;
